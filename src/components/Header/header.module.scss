@@ -2,6 +2,7 @@
 
 .header {
   position: sticky;
+  width: 100%;
   top: 0;
   left: 0;
 
@@ -9,16 +10,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 1;
 
-  transition: all 0.25s ease-in-out;
+  background-color: $color-dark-2;
 
   > a {
     display: flex;
   }
-}
-
-.black {
-  background-color: $color-dark-2;
 }
 
 .netflix_logo {
