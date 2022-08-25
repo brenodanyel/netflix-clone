@@ -1,0 +1,57 @@
+@import "src/variables";
+
+.category {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 1.7em;
+  font-weight: bold;
+  padding: 0 1em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.movies_container {
+  position: relative;
+}
+
+.movies_wrapper {
+  display: flex;
+  // padding: 1em;
+  transition: all 0.5s;
+
+  &:hover {
+    .arrow {
+      opacity: 0.65;
+    }
+  }
+}
+
+.arrow {
+  position: absolute;
+  height: 100%;
+  width: 1em;
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: bold;
+
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: $color-dark-1;
+  color: $color-light-1;
+  border-radius: 10px;
+  opacity: 0;
+
+  transition: all 0.2s ease-in-out;
+
+  &.left {
+    left: 0px;
+  }
+
+  &.right {
+    right: 0px;
+  }
+}
