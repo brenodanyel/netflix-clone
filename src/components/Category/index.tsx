@@ -29,7 +29,7 @@ export function Category({ title, movies }: CategoryProps) {
   };
 
   return (
-    <div className={`${style.category} delayMediumReveal intervalCardReveal`}>
+    <div className={`${style.category} reveal`}>
       <span className={style.title}>{title}</span>
       <div className={style.movies_container}>
         <div className={style.movies_wrapper} style={{ marginLeft: scrollX, width: listWidth }}>
