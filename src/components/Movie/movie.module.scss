@@ -1,0 +1,19 @@
+.movie {
+  width: 150px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  transform: scale(0.95);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.45rem black);
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+.thumbnail {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
